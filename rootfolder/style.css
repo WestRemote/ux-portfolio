@@ -3,3 +3,14 @@ Light: rgba(150, 154, 156, 1)
 Grey: rgba(98, 104, 107, 1)
 Dark: rgba(65, 69, 71, 1)
 */
+
+/* Fonts
+font-family: 'Athiti', sans-serif;
+font-family: 'Catamaran', sans-serif;
+font-family: 'Habibi', serif;
+ */
+
+*{
+  font-family: 'Catamaran', sans-serif;
+  /* font-family: 'Habibi', serif; */
+}
