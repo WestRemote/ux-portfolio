@@ -1,7 +1,8 @@
 /* Colors
-Light: rgba(150, 154, 156, 1)
-Grey: rgba(98, 104, 107, 1)
-Dark: rgba(65, 69, 71, 1)
+White: #fff
+Light: rgba(150, 154, 156, 1) or #969A9C
+Grey: rgba(98, 104, 107, 1) or #62686B
+Dark: rgba(65, 69, 71, 1) or #414547
 */
 
 /* Fonts
@@ -10,7 +11,33 @@ font-family: 'Catamaran', sans-serif;
 font-family: 'Habibi', serif;
  */
 
-*{
-  font-family: 'Catamaran', sans-serif;
-  /* font-family: 'Habibi', serif; */
-}
+ body {
+   background-color: #fff;
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.6;
+   color: #414547;
+ }
+
+ h1, h2, h3, h4 {
+   line-height: 1.4;
+ }
+ h1 {
+   font-size: 2.75em;
+   font-weight: 700;
+ }
+
+ h2 {
+   font-size: 2.25em;
+   font-weight: 700;
+ }
+
+ h3 {
+   font-size: 1.75em;
+   font-weight: 400;
+ }
+ h4 {
+   font-size: 1.35em;
+   font-weight: 400;
+ }
