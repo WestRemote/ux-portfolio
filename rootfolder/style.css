@@ -64,3 +64,30 @@ a:visited { /* visited link */
 a:active { /* selected link */
   color: #994c30;
 }
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: opacity 1s;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  transition: background-color 1s, color 0.3s;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
