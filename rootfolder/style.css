@@ -1,8 +1,8 @@
 /* Colors
 White: #fff
-Light: rgba(150, 154, 156, 1) or #969A9C
-Grey: rgba(98, 104, 107, 1) or #62686B
-Dark: rgba(65, 69, 71, 1) or #414547
+Light: rgba(150, 154, 156, 1) or #969A9C;
+Grey: rgba(98, 104, 107, 1) or #62686B;
+Dark: rgba(65, 69, 71, 1) or #414547;
 */
 
 /* Fonts
@@ -23,23 +23,40 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-
 h1 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 700;
 }
-
 h2 {
-  font-size: 2.25em;
+  font-size: 1.5em;
   font-weight: 700;
 }
-
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.15em;
   font-weight: 400;
 }
 
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+/* Images */
+img {
+  width: 100%;
+}
+
+/* Link style */
+a {
+  color: #414547;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited { /* visited link */
+  color: #414547;
+}
+a:active { /* selected link */
+  color: blue;
 }
