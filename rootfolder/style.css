@@ -111,10 +111,23 @@ a:active { /* selected link */
 
 /* Project section */
 .project{
+  background-color: red;
+  margin: 10px;
+}
+.project-body{
+  display: block;
+}
+.project-img{
   width: 50%;
   display: inline-block;
+  float: left;
+}
+.project-text{
+  display: inline;
+  float:left;
 }
 
+/* Footer section */
 .icon{
   width: 32px;
 }
