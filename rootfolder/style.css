@@ -13,7 +13,7 @@ font-family: 'Habibi', serif;
 
 body {
   background-color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Athiti', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -33,7 +33,7 @@ h2 {
 }
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.15em;
@@ -59,8 +59,9 @@ a:focus {
   text-decoration: underline;
 }
 a:visited { /* visited link */
-  color: #ff7f50;
+  /* color: #ff7f50; */
 }
+
 a:active { /* selected link */
   color: #994c30;
 }
