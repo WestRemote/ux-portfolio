@@ -84,7 +84,7 @@ a:active { /* selected link */
 
 /* Buttons */
 .button {
-  display: block;
+  display: inline-block;
   width: 100px;
   background-color: #ff7f50;
   color: #fff;
