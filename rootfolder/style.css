@@ -3,6 +3,13 @@ White: #fff
 Light: rgba(150, 154, 156, 1) or #969A9C;
 Grey: rgba(98, 104, 107, 1) or #62686B;
 Dark: rgba(65, 69, 71, 1) or #414547;
+
+Accent colors:
+#ff44c4
+#334139
+#E1BC29
+#FF1B1C
+#464655
 */
 
 /* Fonts
@@ -100,4 +107,14 @@ a:active { /* selected link */
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Project section */
+.project{
+  width: 50%;
+  display: inline-block;
+}
+
+.icon{
+  width: 32px;
 }
