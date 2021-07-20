@@ -117,21 +117,25 @@ a:active { /* selected link */
   background-color: red;
   margin: 10px;
   border: solid blue;
+  padding: 30px auto;
 }
 .project-body{
   display: inline-block;
   width: 50%;
-  margin: 30px;
+  margin-left: 30px;
 }
 .project-img{
   width: 40%;
-  display: inline-block;
+  /* display: inline-block; */
   float: left;
+  vertical-align: bottom;
 }
 .project-text{
-  /* display: inline; */
+  display: inline;
+  width: 50%
   /* margin: 20px; */
 }
+
 
 /* Footer section */
 .icon{
