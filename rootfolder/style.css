@@ -93,6 +93,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: opacity 1s;
+  /* margin: 10px; */
 }
 .button:hover {
   opacity: 0.8;
@@ -118,17 +119,18 @@ a:active { /* selected link */
   border: solid blue;
 }
 .project-body{
-  display: block;
+  display: inline-block;
+  width: 50%;
   margin: 30px;
 }
 .project-img{
-  width: 50%;
+  width: 40%;
   display: inline-block;
   float: left;
 }
 .project-text{
-  display: inline;
-  margin: 20px;
+  /* display: inline; */
+  /* margin: 20px; */
 }
 
 /* Footer section */
