@@ -92,7 +92,6 @@ a:active { /* selected link */
   transition: opacity 1s;
   text-transform: uppercase;
   text-align: center;
-  /* margin: 10px; */
 }
 .button:hover {
   opacity: 0.8;
@@ -104,6 +103,7 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #ff7f50;
   transition: background-color 1s, color 0.3s;
+  width: 200px;
 }
 .button.contact:hover {
   background-color: #ff7f50;
@@ -113,7 +113,7 @@ a:active { /* selected link */
 /* Project section */
 .project{
   display: inline-block;
-  /* margin: 10px; */
+  margin: 10px;
 
 }
 .project-body{
@@ -127,7 +127,6 @@ img {
 }
 .project-title{
 }
-
 
 /* Footer section */
 .icon{
