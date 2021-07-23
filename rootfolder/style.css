@@ -1,3 +1,5 @@
+/* ------------------------------------- */
+
 /* Colors
 White: #fff
 Light: rgba(150, 154, 156, 1) or #969A9C;
@@ -5,11 +7,21 @@ Grey: rgba(98, 104, 107, 1) or #62686B;
 Dark: rgba(65, 69, 71, 1) or #414547;
 
 Accent colors:
-#ff44c4
-#334139
-#E1BC29
-#FF1B1C
-#464655
+#FF3347
+#F2DC5D
+#495867
+#580C1F
+
+#495867
+#89043D
+#F0DFAD
+#F39A9D
+#E4959E
+#F3A712
+
+
+CF Colors
+#4a4a4a
 */
 
 /* Fonts
@@ -21,22 +33,24 @@ font-family: 'Habibi', serif;
 * {
   box-sizing:border-box;
 }
-
 body {
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Athiti', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #414547;
 }
-header{
-  background-color: #ff44c4;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
-}
 
+/* Global traits */
+img{
+  width: 100%;
+}
+.logo{
+  /* margin: auto; */
+  /* width: 100% */
+  max-width: 250px;
+}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -51,15 +65,11 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 600;
+  display: inline;
 }
 h4 {
   font-size: 1.15em;
   font-weight: 400;
-}
-
-/* ----------Layout styling---------- */
-.wrapper {
-  padding: 0 15px;
 }
 
 /* Link style */
@@ -68,18 +78,17 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
-a:hover {
-  text-decoration: underline;
+a:visited {
+  /* color: #ff7f50; */
 }
 a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-a:visited { /* visited link */
-  /* color: #ff7f50; */
+a:hover {
+  text-decoration: underline;
 }
-
-a:active { /* selected link */
+a:active {
   color: #994c30;
 }
 
@@ -114,16 +123,86 @@ a:active { /* selected link */
   color: #ffffff;
 }
 
-/* Project section */
-img {
+/* ----------Layout styling---------- */
+
+/* Header section */
+header{
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+  background-color: #F3A712;
+  padding: 10px;
+  margin: 15px 15px 0 15px;
+  text-align: center;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, .1);
+  /* border-bottom: 3px solid #4a4a4a; */
+}
+/* Nav links */
+nav > ul {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+nav ul li{
+  display: inline-block;
+}
+nav > ul > li > a{
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+/* nav > ul > li > a:hover{
+text-decoration: underline;
+}
+nav > ul > li > a:focus{
+color:red;
+}
+nav > ul > li > a:visited{
+color: #62686B;
+}
+nav > ul > li > a:active{
+color:black;
+} */
+
+/* Main Section */
+main{
+  /* padding-top: 169px; */
+}
+#hero{
+  background-color: #F3A712;
+  padding: 0 10px;
+  display: inline-block;
   width: 100%;
 }
-picture{
-  /* display: inline; */
+#hero h1{
+  /* margin: 0;
+  padding: 0.67em 0; */
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+
+#hero h1{
+  text-align: center;
+}
+#work .row{
+  display: inline-block;
+  margin: 25px 0;
+  border-bottom: 2px solid black;
+  padding-bottom: 25px;
+}
+
+.project-img{
+  display: inline-block;
+  float:left;
+  width: 290px;
 }
 
 /* ----------Web View---------- */
-/* .project{
+/* .row{
   display: inline-block;
   margin: 10px;
 }
