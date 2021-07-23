@@ -45,6 +45,8 @@ body {
 /* Global traits */
 img{
   width: 100%;
+  display: block;
+  /* line-height: 0; */
 }
 .logo{
   margin: auto;
