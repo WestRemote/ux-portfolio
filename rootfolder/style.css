@@ -1,3 +1,5 @@
+
+
 /* ------------------------------------- */
 /* Colors
 White: #fff
@@ -138,8 +140,6 @@ header {
   width: 100%;
   max-width: 250px;
 }
-
-/* ---Nav links--- */
 nav {
   margin-top: 10px;
 }
@@ -185,7 +185,7 @@ color:black;
 /* ---Work Section--- */
 #work h3 {
   /* display: block; */
-  /* margin-bottom: 0; */
+  margin: 10px auto;
 }
 #work p {
   margin-top: 0;
@@ -203,20 +203,10 @@ color:black;
   /* float:left; */
 }
 
-/* ----------Web View---------- */
-/*
-.project-body{
-  display: inline-block;
-  width: calc(100vw - 500px - 20px);
-  margin: 0;
-}
- */
-
 /* ---Footer section--- */
 .icon {
   width: 32px;
 }
-
 #contact ul {
   list-style: none;
   padding: 0;
@@ -229,4 +219,38 @@ color:black;
   display: inline-block;
   border: 1px solid;
   padding: 0;
+}
+
+
+/* ==============================
+Medium Devices, 640px+
+================================= */
+@media only screen and (min-width: 640px){
+
+  header{
+    text-align: unset;
+  }
+  .logo{
+    margin: unset;
+    display: inline-block;
+    font-size: 0px;
+  }
+  nav{
+    display: inline-block;
+    float: right;
+    margin-top: 12.5px;
+  }
+
+}
+
+
+/* ==============================
+Large devices (1024px+)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px+)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
