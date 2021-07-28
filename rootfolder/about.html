@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>About - Wolfgang's UX Porfolio</title>
   <meta name="description" content="My UX Portfolio Website">
@@ -16,14 +17,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body id="about-page">
   <!-- Logo and navigation -->
   <header>
     <div class="wrapper" style="line-height:0px;">
       <div class="logo">
         <img src="img/logo/logo.png" alt="Logo">
       </div>
-      <nav>
+      <nav class="container topBotomBordersOut">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
@@ -33,7 +34,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="wrapper">
     <!-- Title - About -->
     <div>
       <div><h1>About</h1></div>
@@ -47,37 +48,41 @@
       <!-- Comlumns Container -->
       <div>
         <!-- Left column -->
-        <div>
+        <div id="left-col">
           <h2>My Story</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="files/resume.pdf" target="_blank" class="button">Download my CV</a>
+          <a href="files/resume.pdf" target="_blank" class="button">Download my Resume</a>
         </div>
         <!-- Right column -->
-        <div class="col-md-6">
+        <div id="right-col">
           <h2>Skills and Tools</h2>
-          <div>
-            <h3>Relevant Skills</h3>
-            <ul>
-              <li>Research</li>
-              <li>User Flows</li>
-              <li>Wireframing</li>
-              <li>Visual design</li>
-              <li>Prototyping</li>
-              <li>User Testing</li>
-              <li>Design Systems</li>
-            </ul>
+          <div class="col-md-6">
+            <div class="row">
+              <h3>Relevant Skills</h3>
+              <ul>
+                <li>Research</li>
+                <li>User Flows</li>
+                <li>Wireframing</li>
+                <li>Visual design</li>
+                <li>Prototyping</li>
+                <li>User Testing</li>
+                <li>Design Systems</li>
+              </ul>
           </div>
-          <div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
             <h3>Tools I Use</h3>
-            <ul>
-              <li>Figma</li>
-              <li>Adobe XD</li>
-              <li>Sketch</li>
-              <li>Illustrator</li>
-              <li>Photoshop</li>
-              <li>Google Suite</li>
-            </ul>
+              <ul>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>Sketch</li>
+                <li>Illustrator</li>
+                <li>Photoshop</li>
+                <li>Google Suite</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

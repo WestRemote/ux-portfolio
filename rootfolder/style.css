@@ -1,6 +1,3 @@
-
-
-/* ------------------------------------- */
 /* Colors
 White: #fff
 Light: rgba(150, 154, 156, 1) or #969A9C;
@@ -89,7 +86,7 @@ a:active {
 /* Buttons */
 .button {
   display: inline-block;
-  width: 180px;
+  width: 200px;
   background-color: #ff7f50;
   color: #fff;
   font-weight: 600;
@@ -117,9 +114,11 @@ a:active {
   color: #ffffff;
 }
 
-/* ----------Layout styling---------- */
+/* ==========Layout styling========== */
 .wrapper {
   padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ---Header section--- */
@@ -128,8 +127,8 @@ header {
   top: 0;
   /* width: 100%; */
   background-color: #F3A712;
-  padding: 10px;
-  /* margin: 0 15px; */
+  padding: 20px 10px;
+  margin: 0 15px;
   text-align: center;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, .1);
 }
@@ -147,7 +146,8 @@ nav {
   line-height: 16px;
   margin-top: 10px;
 }
-nav>ul {
+/* Changed "nav>ul" to "ul" */
+ul {
   display: inline;
   list-style: none;
   padding: 0;
@@ -156,12 +156,55 @@ nav ul li {
   display: inline-block;
 }
 nav>ul>li>a {
-  border: 1px solid;
+  /* border: 1px solid; */
+  display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+/* ====================
+Navigation animation
+======================= */
+/* Top and Bottom borders go out */
+nav.container{
+    /* font-family: Raleway; */
+    margin: auto auto;
+  	/* padding: 1em 1em; */
+  	text-align: center;
+  }
+nav.container a{
+    color: #FFF;
+    text-decoration: none;
+    /* font: 16px Raleway; */
+    margin: 7px 5px 0;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+nav.topBotomBordersOut a:before, nav.topBotomBordersOut a:after{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 1;
+    transition: all 0.3s;
+  }
+nav.topBotomBordersOut a:before{
+    top: 0px;
+    transform: translateY(5px);
+  }
+nav.topBotomBordersOut a:after{
+    bottom: 0px;
+    transform: translateY(-5px);
+  }
+nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 
 /* nav > ul > li > a:hover{
 text-decoration: underline;
@@ -175,6 +218,7 @@ color: #62686B;
 nav > ul > li > a:active{
 color:black;
 } */
+
 /* ---Hero Section--- */
 #hero {
   background-color: #F3A712;
@@ -182,6 +226,7 @@ color:black;
   display: inline-block;
   width: 100%;
   text-align: center;
+  color: #fff;
 }
 /* #hero h1 {
   text-align: center;
@@ -200,6 +245,10 @@ color:black;
   margin: 25px 0;
   border-bottom: 2px solid black;
   padding-bottom: 25px;
+}
+#last-project{
+  display: none;
+  border-bottom: 10px;
 }
 
 .project-img {
@@ -225,17 +274,31 @@ color:black;
   border: 1px solid;
   padding: 0;
 }
+footer{
+  clear: both;
+  background-color: #F3A712;
+}
+footer h2{
+  padding-top: 20px;
+}
 
 
 /* ==============================
 Medium Devices, 640px+
 ================================= */
 @media only screen and (min-width: 640px){
-  .wrapper{
-    padding: 0;
+  #hero-wrapper{
+    /* padding: 0px; */
   }
   header{
     text-align: unset;
+    /* padding: 20px 10px; */
+  }
+  #work h2{
+    padding: 0 10px;
+  }
+  #work h3{
+    margin-top: 0;
   }
   .logo{
     margin: unset;
@@ -248,6 +311,12 @@ Medium Devices, 640px+
     float: right;
     margin-top: 20px;
   }
+
+  nav.container a
+    {
+      margin: 7px 5px;
+    }
+
   body{
     /* font-size: 18px; */
   }
@@ -259,12 +328,14 @@ Medium Devices, 640px+
     margin: 18px auto 38px;
   }
 
+/* =====Columns===== */
   .col-md-6 {
     width: 50%;
     /* display: inline-block; */
   }
   [class*="col-"]{
     float:left;
+    /* margin-left: 10px; */
     padding: 0 10px;
   }
   .row::after {
@@ -272,6 +343,34 @@ Medium Devices, 640px+
     clear: both;
     display: table;
   }
+
+  /* =======About Page======= */
+  #about-page h3 {margin-top: 0;}
+  /* #about-page .wrapper{padding: 0 30px;} */
+  #about-page h1, h2, h3{
+    text-align: center;
+  }
+  #about-page .row {
+    text-align: center;
+  }
+  #left-col {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* ======Buttons====== */
+  #about-page .button{
+    margin: 0 auto;
+    display: block;
+  }
+  footer .button{
+    margin: 0 auto;
+    display: block;
+  }
+  footer{
+    text-align: center;
+  }
+
 }
 
 
@@ -279,9 +378,78 @@ Medium Devices, 640px+
 Large devices (1024px+)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  body{
+    font-size: 22px;
+  }
+  /* =====Why isn't this affecting the .contact as well?======= */
+  .button{
+    width: 300px;
+  }
+  .col-lg-7{
+    width: 58.33%;
+    /* float: left; */
+  }
+  .col-lg-5{
+    width: 41.67%;
+    /* float: left; */
+  }
+  h3{
+    /* border: solid; */
+  }
+
 }
+
 /* ==============================
 X-large devices (1440px+)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  header{
+    /* ====Calculated 1170 due to the padding on wrapper=== */
+    max-width: 1170px;
+    margin: 0 auto;
+    /* padding: 0; */
+    /* padding: 20px 50px; */
+  }
+
+}
+
+#work-svg{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============
+Animations
+================ */
+
+/* ===Sun=== */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 10s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /* animation: 4s color-change infinite alternate linear; */
+}
+/* ===Clouds=== */
+@keyframes cloud-move {
+  0% {transform: translate(0,50px);}
+  50% {transform: translate(200px,50px);}
+  100% {transform: translate(0,50px);}
+}
+.cloud-front{
+  animation: 25s cloud-move infinite normal ease-in-out;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 78s cloud-move-reverse infinite alternate linear;
 }
