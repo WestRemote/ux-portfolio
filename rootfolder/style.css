@@ -3,18 +3,17 @@ White: #fff
 Light: rgba(150, 154, 156, 1) or #969A9C;
 Grey: rgba(98, 104, 107, 1) or #62686B;
 Dark: rgba(65, 69, 71, 1) or #414547;
+#0094C2
+#15b9ec
+#00CA76
+#525266
+#660000
+#F39237
 
 Accent colors:
-#e82b3d
-#F2DC5D
 #495867
 #580C1F
-
 #495867
-#89043D
-#F0DFAD
-#F39A9D
-#E4959E
 #F3A712
 
 
@@ -108,6 +107,7 @@ a:active {
   border: 2px solid #ff7f50;
   transition: background-color 1s, color 0.3s;
   width: 200px;
+  margin: 1em auto;
 }
 .button.contact:hover {
   background-color: #ff7f50;
@@ -126,7 +126,7 @@ header {
   position: sticky;
   top: 0;
   /* width: 100%; */
-  background-color: #F3A712;
+  background-color: #0094C2;
   padding: 20px 10px;
   margin: 0 15px;
   text-align: center;
@@ -221,7 +221,7 @@ color:black;
 
 /* ---Hero Section--- */
 #hero {
-  background-color: #F3A712;
+  background-color: #0094C2;
   padding: 0 10px;
   display: inline-block;
   width: 100%;
@@ -260,6 +260,7 @@ color:black;
 /* ---Footer section--- */
 .icon {
   width: 32px;
+  display: block;
 }
 #contact ul {
   list-style: none;
@@ -276,12 +277,17 @@ color:black;
 }
 footer{
   clear: both;
-  background-color: #F3A712;
+  background-color: #15b9ec;
 }
 footer h2{
   padding-top: 20px;
 }
-
+#divider{
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  margin: 2em auto;
+}
 
 /* ==============================
 Medium Devices, 640px+
@@ -345,9 +351,10 @@ Medium Devices, 640px+
   }
 
   /* =======About Page======= */
-  #about-page h3 {margin-top: 0;}
   /* #about-page .wrapper{padding: 0 30px;} */
-  #about-page h1, h2, h3{
+  #about-page h3 {margin-top: 0;}
+  #about-page h1, h2, h3 {
+    /* ???Only center right on about page */
     text-align: center;
   }
   #about-page .row {
@@ -356,6 +363,9 @@ Medium Devices, 640px+
   #left-col {
     width: 80%;
     margin: auto;
+  }
+  #divider{
+    width: 80%;
   }
 
   /* ======Buttons====== */
@@ -381,7 +391,7 @@ Large devices (1024px+)
   body{
     font-size: 22px;
   }
-  /* =====Why isn't this affecting the .contact as well?======= */
+  /* ???Why isn't this affecting the .contact as well??? */
   .button{
     width: 300px;
   }
