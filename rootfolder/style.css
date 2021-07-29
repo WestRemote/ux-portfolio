@@ -83,6 +83,9 @@ a:active {
 }
 
 /* Buttons */
+#lg-button-br{
+  display: none;
+}
 .button {
   display: inline-block;
   width: 200px;
@@ -114,6 +117,7 @@ a:active {
   color: #ffffff;
 }
 
+
 /* ==========Layout styling========== */
 .wrapper {
   padding: 0 15px;
@@ -138,8 +142,8 @@ header .wrapper{
 }
 
 .logo {
-  margin: auto;
-  width: 100%;
+  /* margin: auto; */
+  /* width: 100%; */
   max-width: 250px;
 }
 nav {
@@ -239,7 +243,7 @@ color:black;
 /* ---Work Section--- */
 /* ???Forced text align, but still why did about-page affect it??? */
 #work h3 {
-  text-align: left;
+  /* text-align: left; */
   margin: 10px auto;
 }
 #work p {
@@ -251,6 +255,7 @@ color:black;
   border-bottom: 2px solid black;
   padding-bottom: 25px;
 }
+
 #last-project{
   display: none;
   border-bottom: 10px;
@@ -266,6 +271,7 @@ color:black;
 .icon {
   width: 32px;
   display: block;
+  margin: 0 5px;
 }
 #contact ul {
   list-style: none;
@@ -290,11 +296,13 @@ footer h2{
 }
 footer p{
   max-width: 18.75em;
-  margin:auto;
+  margin:1em auto;
 }
 #copyright{
   /* margin: auto; */
+  margin-bottom: 0;
   font-size: .7em;
+  padding-bottom: .5em;
 }
 /* footer p{
   width: 65%;
@@ -306,16 +314,27 @@ footer p{
   width: 100%;
   margin: 2em auto;
 }
+#divider-vert{
+  float: left;
+  background-color: black;
+  height: 100px;
+  width: 2px;
+  margin: 2em 0;
+}
 
 #about-page .col-md-6{
   width: 50%;
   float: left;
 }
-#about-page h3 {
-  margin-top: 0;
-}
-#about-page h1, h2, h3 {
+#about-page h1 {
   text-align: center;
+}
+#about-page h2 {
+  text-align: center;
+}
+#about-page h3 {
+  text-align: center;
+  margin-top: 0;
 }
 #about-page .row {
   text-align: center;
@@ -365,6 +384,11 @@ Medium Devices, 640px+
   .col-md-6 {
     width: 50%;
     /* display: inline-block; */
+    float:right;
+  }
+  /* ???Had to force skills/tools to override col-md-6 */
+  #skills-and-tools{
+    width: 100%;
   }
   [class*="col-"]{
     float:left;
@@ -385,12 +409,12 @@ Medium Devices, 640px+
     margin: auto;
   }
   #divider{
-    width: 80%;
+    /* width: 80%; */
   }
 
   /* ======Buttons====== */
   #about-page .button{
-    /* margin: 0 auto; */
+    /* margin: 1em auto; */
     display: block;
   }
   footer .button{
@@ -411,6 +435,9 @@ Large devices (1024px+)
   body{
     font-size: 22px;
   }
+  .wrapper {
+    padding: 0 75px;
+  }
   .button{
     width: 300px;
   }
@@ -420,20 +447,43 @@ Large devices (1024px+)
   .icon{
     width: 48px;
     margin: 10px;
+    /* border: 1px solid; */
   }
-  #left-col{
-    width: 58%;
-    padding: 3%;
+  /* #left-col{
+    width: 50%;
+    float: left;
   }
-
+  #right-col{
+    width: 50%;
+    margin: auto;
+    float: right;
+  } */
+  #divider{
+    display: none;
+  }
+  #lg-button-br{
+    display: block;
+  }
+  #skills-and-tools{
+    width: unset;
+  }
   .col-lg-7{
     width: 58.33%;
-    /* float: left; */
   }
   .col-lg-5{
     width: 41.67%;
-    /* float: left; */
+    float: right;
   }
+
+  /* #left-col{
+    width: 58.33%;
+    float: left;
+  }
+  #right-col{
+    width: 41.67%;
+    margin: auto;
+    float: right;
+  } */
 
   h3{
     /* border: solid; */
