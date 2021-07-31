@@ -256,7 +256,7 @@ color:black;
   padding-bottom: 25px;
 }
 
-#last-project{
+#last-project.row{
   border-bottom: 0px;
 }
 
