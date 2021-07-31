@@ -345,6 +345,9 @@ footer p{
 #about-page .row {
   text-align: center;
 }
+#skills-and-tools h3{
+  text-decoration: underline;
+}
 
 /* ==============================
 Medium Devices, 640px+
@@ -393,7 +396,7 @@ Medium Devices, 640px+
     float:right;
   }
   /* ???Had to force skills/tools to override col-md-6 */
-  #skills-and-tools{
+  div#skills-and-tools{
     width: 100%;
   }
   [class*="col-"]{
@@ -477,8 +480,12 @@ Large devices (1024px+)
   #lg-button-br{
     display: block;
   }
-  #skills-and-tools{
-    width: unset;
+  div#skills-and-tools{
+    width: 342px;
+    /* width: unset; */
+    padding: 0;
+  }
+  #skills-and-tools .col-md-6{
     padding: 0;
   }
   .col-lg-7{
@@ -488,6 +495,7 @@ Large devices (1024px+)
     width: 41.67%;
     float: right;
   }
+
 
   /* #left-col{
     width: 58.33%;
