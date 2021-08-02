@@ -24,6 +24,7 @@ CF Colors
 font-family: 'Athiti', sans-serif;
 font-family: 'Catamaran', sans-serif;
 font-family: 'Habibi', serif;
+font-family: 'raleway';
 */
 
 /* Global traits */
@@ -32,7 +33,7 @@ font-family: 'Habibi', serif;
 }
 body {
   background-color: #ccc;
-  font-family: 'Athiti', sans-serif;
+  font-family: 'athiti', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -129,10 +130,8 @@ a:active {
 header {
   position: sticky;
   top: 0;
-  /* max-width: 1170px; */
   background-color: #0094C2;
   padding: 20px 10px 0;
-  margin: 0 15px;
   text-align: center;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, .1);
 }
@@ -143,7 +142,6 @@ header .wrapper{
 
 .logo {
   margin: auto;
-  /* width: 100%; */
   max-width: 250px;
 }
 nav {
@@ -167,21 +165,19 @@ nav>ul>li>a {
   font-weight: 700;
   color: #4a4a4a;
 }
+
 /* ====================
-Navigation animation
+Navigation effects
 ======================= */
 /* Top and Bottom borders go out */
 nav.container{
-    /* font-family: Raleway; */
     margin: auto auto;
-  	/* padding: 1em 1em; */
   	text-align: center;
   }
 nav.container a{
     font-size: .7em;
     color: #FFF;
     text-decoration: none;
-    /* font: 16px Raleway; */
     margin: 7px 5px;
     padding: 10px 10px;
     position: relative;
@@ -211,19 +207,6 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
     transform: translateY(0px);
   }
 
-/* nav > ul > li > a:hover{
-text-decoration: underline;
-}
-nav > ul > li > a:focus{
-color:red;
-}
-nav > ul > li > a:visited{
-color: #62686B;
-}
-nav > ul > li > a:active{
-color:black;
-} */
-
 /* ---Hero Section--- */
 #hero {
   background-color: #0094C2;
@@ -235,9 +218,7 @@ color:black;
 }
 #hero p{
   max-width: 400px;
-  /* ???Why doesn't margin: unset/initial auto work??? */
   margin: 16px auto;
-  /* margin: inherit auto; */
 }
 
 /* ---Work Section--- */
@@ -305,27 +286,9 @@ footer p{
   margin:1em auto;
 }
 #copyright{
-  /* margin: auto; */
   margin-bottom: 0;
   font-size: .7em;
   padding-bottom: .5em;
-}
-/* footer p{
-  width: 65%;
-  margin: auto;
-} */
-#divider{
-  background-color: black;
-  height: 2px;
-  width: 100%;
-  margin: 2em auto;
-}
-#divider-vert{
-  float: left;
-  background-color: black;
-  height: 100px;
-  width: 2px;
-  margin: 2em 0;
 }
 
 #about-page .col-md-6{
@@ -347,6 +310,12 @@ footer p{
 }
 #skills-and-tools h3{
   text-decoration: underline;
+}
+#divider{
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  margin: 2em auto;
 }
 
 /* ==============================
@@ -411,12 +380,7 @@ Medium Devices, 640px+
   }
 
   /* =======About Page======= */
-  /* #about-page .wrapper{padding: 0 30px;} */
 
-  #left-col {
-    width: 80%;
-    margin: auto;
-  }
   #divider{
     /* width: 80%; */
   }
@@ -465,15 +429,7 @@ Large devices (1024px+)
   .flex-icons{
     width: 300px;
   }
-  /* #left-col{
-    width: 50%;
-    float: left;
-  }
-  #right-col{
-    width: 50%;
-    margin: auto;
-    float: right;
-  } */
+
   #divider{
     display: none;
   }
@@ -495,22 +451,6 @@ Large devices (1024px+)
     width: 41.67%;
     float: right;
   }
-
-
-  /* #left-col{
-    width: 58.33%;
-    float: left;
-  }
-  #right-col{
-    width: 41.67%;
-    margin: auto;
-    float: right;
-  } */
-
-  h3{
-    /* border: solid; */
-  }
-
 }
 
 /* ==============================
