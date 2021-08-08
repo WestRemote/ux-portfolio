@@ -325,8 +325,7 @@ footer p{
   width: 100%;
   font-size: 2em;
   height: 50px;
-  /* background-color: red; */
-  background-color: rgb(236, 248, 255);
+  /* background-color: rgb(236, 248, 255); */
   position: absolute;
   transform: translateY(415.7vw);
   display: flex;
@@ -346,7 +345,7 @@ footer p{
   width: 90%;
   margin: 0 5% 0 5%;
   height: 50px;
-  background-color: rgb(124,125,141);
+  /* background-color: rgb(124,125,141); */
   position: absolute;
   transform: translateY(calc(555vw));
   display: flex;
