@@ -280,6 +280,7 @@ footer{
 }
 footer h2{
   padding-top: 20px;
+  margin-top: 0;
 }
 footer p{
   max-width: 18.75em;
