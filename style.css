@@ -321,18 +321,20 @@ footer p{
 
 /* ---Projects Section--- */
 .proto-link{
-  width: 100%;
+  width: 90%;
+  margin: 0 5% 0 5%;
   height: 50px;
-  margin: auto;
-  background-color: red;
+  /* margin: auto; */
+  background-color: rgb(124,125,141);
   position: absolute;
   opacity: 1;
-  transform: translateY(6520px);
+  transform: translateY(calc(555vw));
   display: flex;
   justify-content: space-around;
 }
 .proto-link a{
   font-size: 2em;
+  text-decoration: underline;
 }
 
 /* ==============================
