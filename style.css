@@ -319,6 +319,22 @@ footer p{
   margin: 2em auto;
 }
 
+/* ---Projects Section--- */
+.proto-link{
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  background-color: red;
+  position: absolute;
+  opacity: 1;
+  transform: translateY(6520px);
+  display: flex;
+  justify-content: space-around;
+}
+.proto-link a{
+  font-size: 2em;
+}
+
 /* ==============================
 Medium Devices, 640px+
 ================================= */
