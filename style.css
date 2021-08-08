@@ -323,7 +323,7 @@ footer p{
 /* ---Projects Section--- */
 #breezy .proto-link{
   width: 100%;
-  font-size: 2em;
+  font-size: calc(100vw / 45);
   height: 50px;
   /* background-color: rgb(236, 248, 255); */
   position: absolute;
@@ -345,13 +345,13 @@ footer p{
   width: 90%;
   margin: 0 5% 0 5%;
   height: 50px;
-  /* background-color: rgb(124,125,141); */
   position: absolute;
   transform: translateY(calc(555vw));
   display: flex;
   justify-content: space-around;
-  font-size: 2em;
+  font-size: calc(100vw / 36);
   text-decoration: underline;
+  /* background-color: rgb(124,125,141); */
   /* opacity: 1; */
 }
 #intoxicant .proto-link a{
