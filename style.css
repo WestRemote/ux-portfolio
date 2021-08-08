@@ -331,7 +331,8 @@ Medium Devices, 640px+
     padding: 20px 10px;
   }
   #work h2{
-    padding: 0 10px;
+    text-decoration: underline;
+    font-size: 2em;
   }
   #work h3{
     margin-top: 0;
