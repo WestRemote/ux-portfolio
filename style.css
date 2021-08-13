@@ -28,11 +28,15 @@ font-family: 'raleway';
 */
 
 /* Global traits */
+:root{
+  --main-bg-color: #ccc;
+  --main-page-color: #0094C2;
+}
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #ccc;
+  background-color: var(--main-bg-color);
   font-family: 'athiti', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -130,7 +134,7 @@ a:active {
 header {
   position: sticky;
   top: 0;
-  background-color: #0094C2;
+  background-color: var(--main-page-color);
   padding: 20px 10px 0;
   text-align: center;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, .1);
@@ -209,7 +213,7 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
 
 /* ---Hero Section--- */
 #hero {
-  background-color: #0094C2;
+  background-color: var(--main-page-color);
   padding: 0 10px;
   display: inline-block;
   width: 100%;
@@ -275,7 +279,7 @@ nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
 footer{
   clear: both;
   color: #fff;
-  background-color: #15b9ec;
+  background-color: var(--main-page-color);
   text-align: center;
 }
 footer h2{
