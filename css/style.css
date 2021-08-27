@@ -30,8 +30,8 @@ font-family: 'raleway';
 /* Global traits */
 :root{
   --main-bg-color: #ccc;
-  /* --main-page-color: #0094C2;   */
-  --main-page-color: #d2c7c7;
+  --main-page-color: #0094C2;
+  /* --main-page-color: #d2c7c7; */
   --hhf-color: #fff; /*header,hero,footer*/
 }
 * {
