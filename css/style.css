@@ -416,15 +416,15 @@ Medium Devices, 640px+
   [class*="col-"]{
     float:left;
     /* margin-left: 10px; */
-    padding: 0 0 0 20px;
-  }
-  .project-image{
     padding: 0;
   }
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+  #work h3, #work p, #work a{
+    margin-left: 20px;
   }
 
   /* =======About Page======= */
@@ -490,9 +490,6 @@ Large devices (1024px+)
   div#skills-and-tools{
     width: 342px;
     /* width: unset; */
-    padding: 0;
-  }
-  #skills-and-tools .col-md-6{
     padding: 0;
   }
   .col-lg-7{
