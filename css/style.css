@@ -319,11 +319,12 @@ footer p{
 #skills-and-tools h3{
   text-decoration: underline;
 }
-#divider{
+.divider{
+  display: block;
   background-color: black;
   height: 2px;
   width: 100%;
-  margin: 2em auto;
+  /* margin: 2em 0; */
 }
 
 /* ---Projects Section--- */
@@ -429,8 +430,9 @@ Medium Devices, 640px+
 
   /* =======About Page======= */
 
-  #divider{
+  .divider{
     /* width: 80%; */
+    display: block;
   }
 
   /* ======Buttons====== */
@@ -481,7 +483,7 @@ Large devices (1024px+)
     width: 300px;
   }
 
-  #divider{
+  .divider{
     display: none;
   }
   #lg-button-br{
