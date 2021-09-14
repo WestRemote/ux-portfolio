@@ -19,6 +19,7 @@ var shortObject = {name2: "William", age: 31};
 var secondName = "name2";
 console.log(secondName);
 console.log(shortObject.name2);
+delete shortObject.name2;
 console.log(shortObject[secondName]);
 
 
