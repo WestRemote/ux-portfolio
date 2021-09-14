@@ -1,13 +1,4 @@
-// console.log('Hello world, here we go.');
-
-// alert('Hello');
-
-// var text1 = 'Hello...';
-// var text2 = 'Hello, spaces are also OK!';
-// var text3 = 'Single quotes are valid too.';
-// console.log(text1, text2);
-// console.log(text3);
-
+// =======Nesting Objects========
 var age = 39;
 var name = 'John';
 var personParent = {
@@ -19,19 +10,21 @@ var personParent = {
   }
 }
 
-// delete personParent.name;
-
-// personParent.name = 'Anne'; // Set the name property to 'Anne'
-personParent.child.size = 175; // Set new values that weren't set before
-console.log(personParent.child.name); // Output 'Sara' to the console
-
-console.log(personParent["name"]); // The same as personParent.name
+// ==========Dot Notation=============
+console.log(personParent["firstname"]); // The same as personParent.name
 var weWantThisField = "age";
 console.log(personParent[weWantThisField]); // The same as personParent.age
 
-console.log('Hello again')
+// =========Bracket Notation===========
+var shortObject = {name2: "William", age: 31};
+var secondName = "name2";
+console.log(secondName);
+console.log(shortObject.name2);
+console.log(shortObject["secondName"]);
 
 
+
+// ==========Arrays===========
 var shortArray = [1, 2, 3, 'hello'];
 var mixedArray = [
   100,
