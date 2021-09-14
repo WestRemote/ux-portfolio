@@ -10,10 +10,9 @@ var personParent = {
   }
 }
 
-// ==========Dot Notation=============
-console.log(personParent["firstname"]); // The same as personParent.name
-var weWantThisField = "age";
-console.log(personParent[weWantThisField]); // The same as personParent.age
+// console.log(personParent["firstname"]); // The same as personParent.name
+// var weWantThisField = "age";
+// console.log(personParent[weWantThisField]); // The same as personParent.age
 
 // =========Bracket Notation===========
 var shortObject = {name2: "William", age: 31};
