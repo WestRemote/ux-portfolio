@@ -137,7 +137,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--main-page-color);
-  padding: 20px 10px 0;
+  padding: 20px 10px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, .1);
   z-index: 3;
 }
@@ -160,9 +160,6 @@ ul {
   list-style: none;
   padding: 0;
 }
-nav ul li {
-  display: inline-block;
-}
 nav>ul>li>a {
   /* border: 1px solid; */
   display: inline-block;
@@ -171,46 +168,23 @@ nav>ul>li>a {
   font-weight: 700;
   /* color: #4a4a4a; */
 }
-
-/* ====================
-Navigation effects
-======================= */
-/* Top and Bottom borders go out */
-nav.container{
-    margin: auto auto;
-  }
-nav.container a{
-    font-size: .7em;
-    /* color: #FFF; */
-    text-decoration: none;
-    margin: 7px 5px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-  }
-nav.topBotomBordersOut a:before, nav.topBotomBordersOut a:after{
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: var(--hhf-color);
-    content: "";
-    opacity: .5;
-    transition: all 0.3s;
-  }
-nav.topBotomBordersOut a:before{
-    top: 0px;
-    transform: translateY(5px);
-  }
-nav.topBotomBordersOut a:after{
-    bottom: 0px;
-    transform: translateY(-5px);
-  }
-nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .ham-icon {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 20px;
+}
+/* Why isn't flex align working?  Had to add space above instead */
+/* .navtoggle {
+  display: flex;
+  align-items: center;
+} */
 
 /* ---Hero Section--- */
 #hero {
@@ -371,7 +345,7 @@ Medium Devices, 640px+
   }
   header{
     text-align: unset;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
   }
   #work h2{
     font-size: 2em;
@@ -388,13 +362,59 @@ Medium Devices, 640px+
     line-height: 0px;
   }
   nav{
-    display: inline-block;
+    /* display: inline-block; */
     float: right;
     margin-top: 20px;
   }
-  nav.container a{
-    font-size: 1em;
+  nav ul li {
+    display: inline-block;
   }
+  /* nav.container a{
+    font-size: 1em;
+  } */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  /* =====Navigation effects====== */
+  /* Top and Bottom borders go out */
+  nav.container{
+      margin: auto auto;
+    }
+  nav.container a{
+    text-decoration: none;
+    margin: 7px 5px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  nav.topBotomBordersOut a:before, nav.topBotomBordersOut a:after{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: var(--hhf-color);
+    content: "";
+    opacity: .5;
+    transition: all 0.3s;
+  }
+  nav.topBotomBordersOut a:before{
+    top: 0px;
+    transform: translateY(5px);
+  }
+  nav.topBotomBordersOut a:after{
+    bottom: 0px;
+    transform: translateY(-5px);
+  }
+  nav.topBotomBordersOut a:hover:before, nav.topBotomBordersOut a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   body{
     /* font-size: 18px; */
   }
