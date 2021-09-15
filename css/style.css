@@ -180,11 +180,6 @@ nav>ul>li>a {
   top: 5px;
   font-size: 20px;
 }
-/* Why isn't flex align working?  Had to add space above instead */
-/* .navtoggle {
-  display: flex;
-  align-items: center;
-} */
 
 /* ---Hero Section--- */
 #hero {
@@ -194,6 +189,9 @@ nav>ul>li>a {
   width: 100%;
   text-align: center;
   color: #fff;
+}
+#hero-wrapper{
+  padding: 0;
 }
 #hero p{
   max-width: 400px;
@@ -346,6 +344,9 @@ Medium Devices, 640px+
   header{
     text-align: unset;
     /* padding: 20px 10px; */
+  }
+  #hero-wrapper{
+    padding: unset;
   }
   #work h2{
     font-size: 2em;
