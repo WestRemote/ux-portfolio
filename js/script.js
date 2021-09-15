@@ -118,3 +118,26 @@ var field2 = false || true; // will also be true
 var field3 = false || "hello"; // will be "hello"
 var field4 = 100 || "hello"; // will be 100
 console.log(field1, field2, field3, field4);
+
+var userInput = "Hello"; // This might come from somewhere else
+function someFunction(userInput) {
+  // If userInput was empty, use "Default text", else use the userInput...
+  var myValue = userInput || "Default text";
+  // Do something more
+}
+console.log(userInput);
+
+
+// ==========Loops==========
+
+
+var dates = [17, 19, 23, 29];
+for (var i = 0; i < dates.length; i++) {
+  console.log(dates[i]);
+}
+console.log(dates.length);
+
+var prices = [15, 20, 25, 30];
+for (var i = 0; i < prices.length; i++) {
+  console.log(prices[i]);
+}
