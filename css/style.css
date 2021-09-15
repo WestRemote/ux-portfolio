@@ -149,11 +149,11 @@ header .wrapper{
 
 .logo {
   margin: auto;
-  max-width: 250px;
+  max-width: 150px;
+  float: left;
 }
 nav {
   line-height: 16px;
-  margin-top: 10px;
 }
 /* Changed "nav>ul" to "ul" */
 ul {
@@ -382,6 +382,8 @@ Medium Devices, 640px+
     margin-top: 0;
   }
   .logo{
+    max-width: 250px;
+    float: unset;
     margin: unset;
     display: inline-block;
     font-size: 0px;
