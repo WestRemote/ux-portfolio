@@ -169,29 +169,31 @@ nav>ul>li>a {
   /* color: #4a4a4a; */
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .ham-icon {
-  position: absolute;
-  right: 0;
-  top: 5px;
-  font-size: 20px;
-}
-.navtoggle.responsive li {
-  display: block;
-  text-align: right;
-  padding: 15px 0;
-  border-top: 1px solid #ddd;
-}
-.navtoggle.responsive li:last-child {
-  padding: 0;
-}
-.navtoggle.responsive li:first-child {
-  margin-top: 15px;
+@media only screen and (max-width: 639px){
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .ham-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 20px;
+  }
+  .navtoggle.responsive li {
+    display: block;
+    text-align: right;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+  }
+  .navtoggle.responsive li:last-child {
+    padding: 0;
+  }
+  .navtoggle.responsive li:first-child {
+    margin-top: 15px;
+  }
 }
 
 /* ---Hero Section--- */
