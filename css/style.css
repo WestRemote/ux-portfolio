@@ -168,6 +168,7 @@ nav>ul>li>a {
   font-weight: 700;
   /* color: #4a4a4a; */
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
