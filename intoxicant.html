@@ -22,16 +22,17 @@
   <!-- Logo and navigation -->
   <header>
     <div class="wrapper" style="line-height:0px;">
-      <div class="logo">
-        <img src="img/logo/logo.png" alt="Logo">
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/logo/logo.png" alt="Logo">
+        <nav class="container topBotomBordersOut">
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="ham-icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="container topBotomBordersOut">
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
