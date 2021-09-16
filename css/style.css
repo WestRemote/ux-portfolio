@@ -385,9 +385,9 @@ Medium Devices, 640px+
   .navtoggle li:last-child {
     display: none;
   }
-  .navtoggle.responsive li  {
+  /* .navtoggle.responsive li  {
   display: block;
-  }
+  } */
 
   /* =====Navigation effects====== */
   /* Top and Bottom borders go out */
