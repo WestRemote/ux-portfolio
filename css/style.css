@@ -180,6 +180,18 @@ nav>ul>li>a {
   top: 5px;
   font-size: 20px;
 }
+.navtoggle.responsive li {
+  display: block;
+  text-align: right;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+.navtoggle.responsive li:last-child {
+  padding: 0;
+}
+.navtoggle.responsive li:first-child {
+  margin-top: 15px;
+}
 
 /* ---Hero Section--- */
 #hero {
@@ -378,6 +390,9 @@ Medium Devices, 640px+
   }
   .navtoggle li:last-child {
     display: none;
+  }
+  .navtoggle.responsive li  {
+  display: block;
   }
 
   /* =====Navigation effects====== */
