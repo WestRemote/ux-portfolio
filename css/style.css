@@ -131,6 +131,11 @@ a:active {
   max-width: 1200px;
   margin: 0 auto;
 }
+.caseStudyMain img{
+  width: 100vw;
+  position: relative;
+  left: -15px;
+}
 
 /* ---Header section--- */
 header {
@@ -225,16 +230,14 @@ nav>ul>li>a {
   border-bottom: 2px solid black;
   padding-bottom: 25px;
 }
-
 #last-project.row{
   border-bottom: 0px;
 }
 
-.project-img {
+/* I don't think this ever got used (see project-image) */
+/* .project-img {
   width: 290px;
-  /* display: block; */
-  /* float:left; */
-}
+} */
 
 /* ---Footer section--- */
 .icon {
@@ -495,9 +498,16 @@ Large devices (1024px+)
     margin: 0 auto;
     padding: 20px 0;
   }
+
   .wrapper {
     padding: 0 75px;
   }
+  .caseStudyMain img{
+    width: 100vw;
+    position: relative;
+    left: -75px;
+  }
+
   .button{
     width: 300px;
   }
